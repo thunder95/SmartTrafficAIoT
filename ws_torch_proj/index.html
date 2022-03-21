@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" type='text/css' href='main.css' />
+    <meta charset="utf-8">
+    <title>
+        智慧交通AIoT项目演示
+    </title>
+</head>
+<body>
+
+    <div class="demo_area">
+        <h3>智慧交通AIoT项目演示</h3>
+
+        <select id="video_src" style="width: 200px">
+            <option value="0">晴朗_视频</option>
+            <option value="1">雨天_视频</option>
+            <option value="2">雾天_视频</option>
+            <option value="3">夜间_视频</option>
+        </select>
+
+        <button id="start_btn"> 开始 </button>
+        <button id="stop_btn"> 结束 </button>
+
+        <br>
+
+         <select id="command" style="width: 200px">
+            <option value="Green_control">绿灯时长</option>
+            <option value="Light_ON">路灯开启</option>
+            <option value="Yellow_ON">黄灯开启</option>
+        </select>
+        <input type="text" value="0" id="command_value" style="width: 100px">
+        <button id="create_command_btn"> 命令下发 </button>
+
+        <br>
+        <br>
+
+        最近5条命令:<br>
+        <textarea  disabled cols="70" rows="7" id="cmd_area"></textarea>
+        <br>
+        根据车流控制绿灯时长: <div id="green_time" style="display: inline-block; color: green">60</div> 秒
+        <br>
+        <img id="video" src="" style="margin-top:50px"/>
+    </div>
+
+    <script src="jquery-3.3.1.min.js" ></script>
+    <script src='socket.js'></script>
+</body>
+</html>

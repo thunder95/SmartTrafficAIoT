@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" type='text/css' href='main.css' />
+    <meta charset="utf-8">
+    <title>
+        智慧交通AIoT项目演示
+    </title>
+</head>
+<body>
+
+    <div class="demo_area">
+        <h3>智慧交通AIoT项目演示</h3>
+        视频路径: <input id="video_src" type="text" name="video_src" value="/home/hulei/projects/hw_iot/c003.mp4"/>
+        <button id="start_btn"> Start </button>
+        <button id="stop_btn"> Stop </button>
+        <br>
+        最近3条命令:<br>
+        <textarea cols="50" rows="3" id="cmd_area">xxxx</textarea>
+        </br>
+        <img id="video" src="" style="margin-top:50px"/>
+    </div>
+
+    <script src="jquery-3.3.1.min.js" ></script>
+    <script src='socket.js'></script>
+</body>
+</html>
